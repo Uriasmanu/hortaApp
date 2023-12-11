@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const Localizacao: React.FC = () => {
   return (
     <View style={styles.container}>
-      <Text>Localizacao Component</Text>
+      
     </View>
   );
 };
