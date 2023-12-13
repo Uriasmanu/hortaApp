@@ -2,10 +2,10 @@
 import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
+import Inicio from '../componentes/Inicio';
 
 type RootDrawerParamList = {
   Home: undefined;
-  Notifications: undefined;
 };
 
 type HomeScreenProps = {
@@ -15,7 +15,7 @@ type HomeScreenProps = {
 export function HomeScreen({ navigation }: HomeScreenProps) {
   return (
     <View style={styles.container}>
-      
+      <Inicio/>
     </View>
   );
 }
@@ -23,8 +23,6 @@ export function HomeScreen({ navigation }: HomeScreenProps) {
 const styles = StyleSheet.create({
     container:{
         flex: 1, 
-        alignItems: 'center', 
-        justifyContent: 'center', 
         backgroundColor:"#3C533C"
     }
 });

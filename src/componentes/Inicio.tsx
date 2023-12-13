@@ -2,27 +2,15 @@ import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Image, Text } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-import Textos from '../mocks/textos';
+import {TextosInicio} from '../mocks/textos';
 
 const Inicio: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
-    <View>
-      <View style={styles.container}>
-        <TouchableOpacity style={styles.logo}>
-          <Image source={require('../../assets/topo.png')} style={styles.logoImage} />
-        </TouchableOpacity>
-      </View>
-
       <View>
-        <Text style={styles.titulo}>{Textos.titulo}</Text>
+        <Text style={styles.titulo}>{TextosInicio.titulo}</Text>
         <TouchableOpacity style={styles.botaoInicio}>
-           <Text style={styles.textoBotoaInicio}>{Textos.saibaMais}</Text><Svg
+           <Text style={styles.textoBotoaInicio}>{TextosInicio.saibaMais}</Text><Svg
           width={35}
           height={35}
           viewBox="0 0 24 24"
@@ -37,27 +25,12 @@ const Inicio: React.FC = () => {
            
         </TouchableOpacity>
       </View>
-    </View>
+
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  logo: {
-    flex: 1,
-  },
-  logoImage: {
-    width: 80,
-    height: 80,
-    marginHorizontal: 12,
-  },
-  menu: {
-    justifyContent: 'center',
-    marginHorizontal: 16,
-  },
+
   titulo:{
     width: '90%',
     fontSize: 30,
