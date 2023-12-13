@@ -24,6 +24,8 @@ const Inicio: React.FC = () => {
         </Svg>
            
         </TouchableOpacity>
+
+        <Image style={styles.imagem} source={require('../../assets/Imagens/inicio.png')} />
       </View>
 
   );
@@ -56,6 +58,12 @@ const styles = StyleSheet.create({
     color: '#3C533C',
     fontSize: 18,
     
+  },
+  imagem:{
+    width: "93%",
+    height: 280,
+    marginVertical: 16,
+    marginHorizontal: 12,
   }
 });
 
