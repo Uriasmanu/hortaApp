@@ -1,21 +1,15 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import Home from './src/telas/Home';
+import { NavigationContainer } from '@react-navigation/native';
+import { HomeScreen } from './src/telas/HomeScreen';
+import Routers from './src/routs/Routers';
 
 
-function App(): React.JSX.Element {
+function App() {
   return (
-    <ScrollView style={estilosInicio.container}>
-     <Home/>
-    </ScrollView>
+    <NavigationContainer>
+      <Routers/>
+    </NavigationContainer>
   );
 }
-
-const estilosInicio = StyleSheet.create({
-  container: {
-    backgroundColor: "#3C533C",
-    flex: 1,
-  },
-});
 
 export default App;
