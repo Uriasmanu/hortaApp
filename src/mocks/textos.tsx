@@ -2,7 +2,15 @@ import React from "react";
 
 export const TextosInicio = {
     titulo: 'Horta Comunitária Vinha do Senhor',
-    saibaMais : "Saiba Mais"
+    saibaMais : "Saiba Mais",
+    subtitulo: 'Principais Projetos',
+    subtitulo2: 'Outros Projetos',
+    tituloCard: "Horta medidinal",
+    tituloCard2: "Projeto Sopão",
+    tituloCard3: "Projeto com as crianças, Semeando o Futuro",
+    tituloCard4: "Realização de palestras: Conscientização",
+    tituloCard5: "Padaria comunitária: Pão da partilha",
+    tituloCard6: "Cultivo das hortaliças",
 }
 
 export const TextosSobre ={

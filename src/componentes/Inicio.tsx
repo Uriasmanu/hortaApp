@@ -4,6 +4,7 @@ import Svg, { Path } from 'react-native-svg';
 
 import {TextosInicio} from '../mocks/textos';
 
+
 const Inicio: React.FC = () => {
 
   return (
@@ -26,6 +27,7 @@ const Inicio: React.FC = () => {
         </TouchableOpacity>
 
         <Image style={styles.imagem} source={require('../../assets/Imagens/inicio.png')} />
+        
       </View>
 
   );

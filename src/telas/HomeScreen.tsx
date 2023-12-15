@@ -3,6 +3,8 @@ import React from 'react';
 import { Button, StyleSheet, View } from 'react-native';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 import Inicio from '../componentes/Inicio';
+import { Projetos } from '../routs/Projetos';
+import { ScrollView } from 'react-native-gesture-handler';
 
 type RootDrawerParamList = {
   Home: undefined;
@@ -14,9 +16,10 @@ type HomeScreenProps = {
 
 export function HomeScreen({ navigation }: HomeScreenProps) {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Inicio/>
-    </View>
+      <Projetos/>
+    </ScrollView>
   );
 }
 
