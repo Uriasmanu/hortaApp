@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Projetos: React.FC = () => {
+const ProjetosPrincipais: React.FC = () => {
   return (
     <View style={styles.container}>
    
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Projetos;
+export default ProjetosPrincipais;

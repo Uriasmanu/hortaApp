@@ -1,9 +1,8 @@
 // Projetos.tsx
 import React from 'react';
-import { StyleSheet, View, Text, Image,  Touchable } from 'react-native';
+import { ScrollView, StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 import { TextosInicio } from '../mocks/textos';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 
 type RootDrawerParamList = {
   Home: undefined;
@@ -25,22 +24,21 @@ export function Projetos({ navigation }: ProjetosProps) {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
+
       <Text style={styles.titulo}>{TextosInicio.subtitulo}</Text>
 
       <View style={styles.card}>
         <Image source={require('../../assets/Imagens/medicinal.png')} style={styles.imagem} />
-        <Text style={styles.tituloCard} >{TextosInicio.tituloCard}</Text>
+        <Text style={styles.tituloCard}>{TextosInicio.tituloCard}</Text>
         <TouchableOpacity style={styles.botao}>
           <Text style={styles.textoBotoa}>{TextosInicio.saibaMais}</Text>
         </TouchableOpacity>
-       
-       
       </View>
 
       <View style={styles.card}>
         <Image source={require('../../assets/Imagens/sopao.png')} style={styles.imagem} />
-        <Text style={styles.tituloCard} >{TextosInicio.tituloCard2}</Text>
+        <Text style={styles.tituloCard}>{TextosInicio.tituloCard2}</Text>
         <TouchableOpacity style={styles.botao}>
           <Text style={styles.textoBotoa}>{TextosInicio.saibaMais}</Text>
         </TouchableOpacity>
@@ -48,64 +46,62 @@ export function Projetos({ navigation }: ProjetosProps) {
 
       <View style={styles.card}>
         <Image source={require('../../assets/Imagens/criancas.png')} style={styles.imagem} />
-        <Text style={styles.tituloCard} >{TextosInicio.tituloCard3}</Text>
+        <Text style={styles.tituloCard}>{TextosInicio.tituloCard3}</Text>
         <TouchableOpacity style={styles.botao}>
           <Text style={styles.textoBotoa}>{TextosInicio.saibaMais}</Text>
         </TouchableOpacity>
       </View>
 
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center'
+    
+  },
+  scrollContent: {
+    alignItems: 'center',
   },
   titulo: {
     width: '90%',
     fontSize: 23,
     color: "#fff",
     fontWeight: "bold",
-    
   },
-  card:{
+  card: {
     backgroundColor: '#fff',
     width: "95%",
-    height: 390,
-    padding: 4,
-    justifyContent:'center',
+    height: "auto",
+    padding: "2%",
+    justifyContent: 'center',
     marginVertical: 10,
-   
   },
   imagem: {
     width: "100%",
-    height: "83%",
-    
+    height: 300, // Ajuste conforme necessário
   },
-  tituloCard:{
+  tituloCard: {
     width: '90%',
     fontSize: 18,
     color: "#3C533C",
     marginVertical: 5,
   },
-  botao:{
+  botao: {
     width: "100%",
     height: 30,
     backgroundColor: '#fed',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderColor:'#000',
+    borderColor: '#000',
     borderWidth: 1,
-    padding: 3
-    
+    padding: 3,
   },
-  textoBotoa:{
+  textoBotoa: {
     color: '#3C533C',
     fontSize: 16,
-    
   },
 });
 
