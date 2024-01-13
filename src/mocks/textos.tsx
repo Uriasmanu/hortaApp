@@ -29,24 +29,35 @@ export const TextosSobre ={
 export const TextosAgenda ={
     titulo: "Agenda semanal",
 
-    segunda: "segunda-Feira",
+    segunda: "Segunda-Feira",
     cultivo: "Cultivo",
 
     terca: "Terça-Feira",
     venda: "Arrecadação de fundos",
 
     quarta: "Quarta-Feira",
-    sopao: "Sopão",
+    sopao: " Projeto Sopão",
 
     quinta: "Quinta-Feira",
     pao: "Padaria Comunitaria",
 
     sabado:"Sabado",
     semando: "Projeto semeando o Futuro",
-    
+
     domingo:"Domingo",
-    trabalho: "Trabalho manual"
+    trabalho: "Trabalho manual e Manutenção"
     
+}
+
+export const TextosProjetos ={
+    titulos: "Galerias",
+
+    horta: "Horta Medicinal",
+    sopao: "Projeto Sopão",
+    pao: "Padaria Comunitaria",
+    projeto: "Projeto com as crianças, Semeando o Futuro",
+    palestra: "Realização de palestras: Concientização",
+    cultivo: "Cultivo de hortaliças"
 }
 
 
